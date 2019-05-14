@@ -30,7 +30,7 @@ function mousePressed() {
   
   if (d < 100) { // if click is within circle
     score++
-    relocateCircle()
+    // relocateCircle()
     
     if (score % 10 === 0) { // upgrade level after score of 10, 20, 30 ... 
         upgradeLevel()        
@@ -55,7 +55,6 @@ function upgradeLevel() {
 
 function resetInterval() {
   clearInterval(relocateInterval)
-  
   relocateInterval = setInterval(relocateCircle, delay)
 }
  
